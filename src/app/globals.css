@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #030305;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #030305;
+  color: #ffffff;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030305;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f1f2e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2e2e42;
+}
+
+/* Cyanex-Style Animated Edge Traces */
+@keyframes edgeTop {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(1200%);
+  }
+}
+
+@keyframes edgeBottom {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-1200%);
+  }
+}
+
+.animate-edge-top {
+  animation: edgeTop 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-edge-bottom {
+  animation: edgeBottom 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Subtle glow utility */
+.glow-cyan {
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.3);
+}
+
+::selection {
+  background-color: #22d3ee;
+  color: #000000;
+}
