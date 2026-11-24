@@ -1,77 +1,46 @@
 @import "tailwindcss";
 
 :root {
-  --background: #030305;
-  --foreground: #ffffff;
+  --background: #ffffff;
+  --foreground: #09090b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 }
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
-  background-color: #030305;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #09090b;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   overflow-x: hidden;
 }
 
-/* Custom Scrollbar */
+/* Minimal Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #030305;
+  background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1f1f2e;
-  border-radius: 4px;
+  background: #e4e4e7;
+  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2e2e42;
-}
-
-/* Cyanex-Style Animated Edge Traces */
-@keyframes edgeTop {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(1200%);
-  }
-}
-
-@keyframes edgeBottom {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-1200%);
-  }
-}
-
-.animate-edge-top {
-  animation: edgeTop 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}
-
-.animate-edge-bottom {
-  animation: edgeBottom 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}
-
-/* Subtle glow utility */
-.glow-cyan {
-  box-shadow: 0 0 25px rgba(34, 211, 238, 0.3);
+  background: #d4d4d8;
 }
 
 ::selection {
-  background-color: #22d3ee;
-  color: #000000;
+  background-color: #18181b;
+  color: #ffffff;
 }
+

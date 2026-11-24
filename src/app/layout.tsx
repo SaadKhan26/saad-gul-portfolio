@@ -1,26 +1,25 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import ScrollProgress from '@/components/ui/ScrollProgress';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const sansFont = Plus_Jakarta_Sans({
+  variable: '--font-sans',
   subsets: ['latin'],
   display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const monoFont = JetBrains_Mono({
+  variable: '--font-mono',
   subsets: ['latin'],
   display: 'swap',
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://saadgul.dev'),
-  title: 'Saad Gul — Front-End Engineer & Shopify Specialist',
-  description: 'Official portfolio of Saad Gul, Front-End Engineer & Shopify Specialist with 5+ years shipping high-converting Shopify stores (Comfrt, Kawaii Slime) and modern React & Next.js applications (Comparables.ai).',
+  metadataBase: new URL('https://saadgul-portfolio.vercel.app'),
+  title: 'Saad Gul — Front-End Engineer & Shopify Developer',
+  description: 'Saad Gul is a Front-End Engineer & Shopify Specialist with 5+ years building custom Shopify themes (Liquid) and React/Next.js web applications.',
   keywords: [
     'Saad Gul',
     'Shopify Developer',
@@ -42,15 +41,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://saadgul.dev',
-    title: 'Saad Gul — Front-End Engineer & Shopify Specialist',
-    description: 'Transforming complex UI/UX designs into pixel-perfect, high-performance web applications and high-converting Shopify stores.',
+    url: 'https://saadgul-portfolio.vercel.app',
+    title: 'Saad Gul — Front-End Engineer & Shopify Developer',
+    description: 'Front-End Engineer & Shopify Specialist with 5+ years building custom Shopify themes and React web applications.',
     siteName: 'Saad Gul Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Saad Gul — Front-End Engineer & Shopify Specialist',
-    description: 'High-converting Shopify stores and modern React/Next.js web applications.',
+    title: 'Saad Gul — Front-End Engineer & Shopify Developer',
+    description: 'Front-End Engineer & Shopify Specialist with 5+ years building custom Shopify themes and React web applications.',
     creator: '@saadgul',
   },
   robots: {
@@ -125,7 +124,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased`}
+      className={`${sansFont.variable} ${monoFont.variable} scroll-smooth antialiased`}
     >
       <head>
         <script
@@ -133,8 +132,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen bg-[#030305] text-white flex flex-col font-sans selection:bg-cyan-400 selection:text-black">
-        <ScrollProgress />
+      <body className="min-h-screen bg-white text-zinc-900 flex flex-col font-sans selection:bg-zinc-900 selection:text-white">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

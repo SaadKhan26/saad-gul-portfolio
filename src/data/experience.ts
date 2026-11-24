@@ -3,15 +3,15 @@ import { ExperienceItem } from '@/types';
 export const experienceData: ExperienceItem[] = [
   {
     id: 'faj-it',
-    role: 'Senior Shopify Developer',
+    role: 'Senior Frontend & Shopify Developer',
     company: 'FAJ IT Solutions',
     dateRange: 'October 2025 – Present',
     location: 'Islamabad, Pakistan',
-    techStack: ['Shopify', 'Liquid', 'HTML5', 'CSS3', 'JavaScript (ES6+)', 'Material UI'],
+    techStack: ['React.js', 'Shopify', 'Liquid', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Material UI'],
     bullets: [
-      'Designed, customized, and optimized high-converting Shopify themes using Liquid, improving site performance, page load speeds, and conversion rates.',
-      'Translated complex Figma prototypes into pixel-perfect, responsive UI components with Material UI while maintaining strict WCAG accessibility standards.',
-      'Implemented dynamic storefront features with modern JavaScript and Shopify AJAX APIs (drawer cart, live search, product filtering), streamlining customer journeys and boosting checkout conversions.'
+      'FAJ Technical Services (React.js): Engineered responsive web platform and service booking funnels using React.js and Material UI, delivering sub-second load times and streamlined booking flows.',
+      'FAJ Trading L.L.C. (Shopify): Architected corporate B2B wholesale platform on Shopify, implementing custom Request-for-Quote (RFQ) workflows, tiered catalog pricing, and corporate inquiry funnels.',
+      'FAJ Trading Pvt. Ltd. (Shopify): Built dedicated regional e-commerce store on Shopify (Liquid) featuring 1,000+ SKU part search, instant AJAX cart drawer, and localized payment integrations.'
     ]
   },
   {

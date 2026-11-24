@@ -18,70 +18,66 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#030305] border-t border-white/[0.08] text-zinc-400 py-12 relative overflow-hidden">
-      {/* Background glow accent */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[150px] bg-cyan-950/20 blur-[100px] rounded-full pointer-events-none" />
-
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-white/[0.08]">
+    <footer className="bg-white border-t border-zinc-200/80 text-zinc-600 py-16">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 pb-12 border-b border-zinc-200/60">
           {/* Brand Info */}
           <div className="md:col-span-2 space-y-3">
-            <div className="flex items-center gap-2">
-              <div className="w-7 h-7 rounded-md bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-black font-black text-xs shadow-md shadow-cyan-500/20">
-                SG
-              </div>
-              <span className="text-white font-bold text-base tracking-tight">Saad Gul</span>
+            <div className="text-zinc-950 font-semibold text-base tracking-tight">
+              Saad Gul
             </div>
-            <p className="text-xs text-zinc-400 max-w-sm leading-relaxed">
-              Front-End Engineer & Shopify Specialist with 5+ years of experience transforming complex Figma designs into high-converting e-commerce stores and modern React/Next.js web applications.
+            <p className="text-xs text-zinc-600 max-w-sm leading-relaxed">
+              Front-End Engineer &amp; Shopify Specialist. 5+ years building custom Shopify themes and React applications for DTC brands, B2B platforms, and SaaS products.
             </p>
-            <div className="pt-1 flex items-center gap-2 text-xs text-zinc-400 font-medium">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
-              <span>Based in Islamabad, Pakistan — Available Worldwide</span>
+            <div className="text-xs font-mono text-zinc-400">
+              Islamabad, Pakistan &bull; Available Worldwide
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-white tracking-widest uppercase">Navigation</h4>
+            <div className="text-xs font-mono text-zinc-500">Navigation</div>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="#about" className="hover:text-cyan-400 transition-colors">About & Profile</Link>
+                <Link href="#hero" className="hover:text-zinc-950 transition-colors">Intro</Link>
               </li>
               <li>
-                <Link href="#projects" className="hover:text-cyan-400 transition-colors">Featured Projects (10)</Link>
+                <Link href="#about" className="hover:text-zinc-950 transition-colors">Capabilities</Link>
               </li>
               <li>
-                <Link href="#experience" className="hover:text-cyan-400 transition-colors">Experience Timeline</Link>
+                <Link href="#projects" className="hover:text-zinc-950 transition-colors">Projects (10)</Link>
               </li>
               <li>
-                <Link href="#skills" className="hover:text-cyan-400 transition-colors">Skills & Tech Stack</Link>
+                <Link href="#experience" className="hover:text-zinc-950 transition-colors">Experience</Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-cyan-400 transition-colors">Get In Touch</Link>
+                <Link href="#skills" className="hover:text-zinc-950 transition-colors">Skills</Link>
+              </li>
+              <li>
+                <Link href="#contact" className="hover:text-zinc-950 transition-colors">Contact</Link>
               </li>
             </ul>
           </div>
 
           {/* Direct Channels */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-white tracking-widest uppercase">Direct Channels</h4>
-            <ul className="space-y-2.5 text-xs">
+            <div className="text-xs font-mono text-zinc-500">Direct Contact</div>
+            <ul className="space-y-2 text-xs">
               <li>
                 <a 
                   href="mailto:gul.saadkhan@outlook.com" 
-                  className="inline-flex items-center gap-2 hover:text-cyan-400 transition-colors font-medium text-zinc-300"
+                  className="inline-flex items-center gap-2 hover:text-zinc-950 transition-colors text-zinc-700"
                 >
-                  <Mail className="w-3.5 h-3.5 text-cyan-400" />
+                  <Mail className="w-3.5 h-3.5 text-zinc-500" />
                   <span>gul.saadkhan@outlook.com</span>
                 </a>
               </li>
               <li>
                 <a 
                   href="tel:+923425603490" 
-                  className="inline-flex items-center gap-2 hover:text-cyan-400 transition-colors font-medium text-zinc-300"
+                  className="inline-flex items-center gap-2 hover:text-zinc-950 transition-colors text-zinc-700"
                 >
-                  <Phone className="w-3.5 h-3.5 text-cyan-400" />
+                  <Phone className="w-3.5 h-3.5 text-zinc-500" />
                   <span>+92 342 5603490</span>
                 </a>
               </li>
@@ -90,11 +86,11 @@ export default function Footer() {
                   href="https://www.linkedin.com/in/saad-gull-011934164/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-2 hover:text-cyan-400 transition-colors font-medium text-zinc-300"
+                  className="inline-flex items-center gap-2 hover:text-zinc-950 transition-colors text-zinc-700"
                 >
-                  <LinkedinIcon className="w-3.5 h-3.5 text-cyan-400" />
-                  <span>LinkedIn Profile</span>
-                  <ExternalLink className="w-3 h-3 text-zinc-500" />
+                  <LinkedinIcon className="w-3.5 h-3.5 text-zinc-500" />
+                  <span>LinkedIn</span>
+                  <ExternalLink className="w-3 h-3 text-zinc-400" />
                 </a>
               </li>
             </ul>
@@ -104,15 +100,15 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
           <div>
-            &copy; 2026 Saad Gul. All rights reserved. Built with Next.js & Tailwind CSS.
+            &copy; 2026 Saad Gul. All rights reserved.
           </div>
           <button
             onClick={scrollToTop}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.08] text-zinc-300 hover:text-white transition-all duration-200"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-zinc-50 hover:bg-zinc-100 border border-zinc-200 text-zinc-700 hover:text-zinc-950 transition-colors"
             aria-label="Scroll back to top"
           >
             <span>Back to top</span>
-            <ArrowUp className="w-3.5 h-3.5 text-cyan-400" />
+            <ArrowUp className="w-3.5 h-3.5" />
           </button>
         </div>
       </div>
